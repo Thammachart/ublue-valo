@@ -28,4 +28,5 @@ cp -v /ctx/greetd/* /etc/greetd/
 rm -rf /run/dnf /run/selinux-policy
 
 #### Example for enabling a System Unit File
+systemctl enable greetd
 systemctl enable podman.socket
