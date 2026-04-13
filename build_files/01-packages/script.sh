@@ -18,4 +18,4 @@ dnf install -y nushell --setopt=tsflags=noscripts
 dnf -y install \
     hyprland hypridle
 
-flatpak install flathub com.vscodium.codium
+flatpak install -y --noninteractive flathub com.vscodium.codium
