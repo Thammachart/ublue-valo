@@ -10,8 +10,10 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 dnf install -y \
-    nushell neovim helix \
+    neovim helix \
     greetd gtkgreet sway \
+
+dnf install -y nushell --setopt=tsflags=noscripts
 
 dnf -y install \
     hyprland hypridle
