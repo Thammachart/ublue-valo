@@ -1,13 +1,1 @@
-# Add these kernel arguments
-kargs = [
-    "rd.plymouth=0",
-    "plymouth.enable=0",
-    "systemd.show_status=1",
-]
-
-# Remove these kernel arguments (that the base image ships)
-delete = [
-    "rhgb",
-    "quiet",
-    "splash",
-]
+kargs = ["rd.plymouth=0", "plymouth.enable=0", "systemd.show_status=1"]
