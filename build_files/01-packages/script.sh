@@ -2,6 +2,9 @@
 
 set -ouex pipefail
 
+dnf remove -y 'plymouth*'
+rm -rf /usr/lib/dracut/modules.d/50plymouth
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -10,7 +13,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 dnf install -y \
-    neovim helix \
+    neovim helix chezmoi \
     greetd gtkgreet sway \
 
 dnf install -y nushell --setopt=tsflags=noscripts
