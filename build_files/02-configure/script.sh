@@ -12,5 +12,12 @@ cp -v /ctx/greetd/sessions/* /usr/bin/
 systemctl enable greetd
 systemctl enable podman.socket
 
+systemctl mask NetworkManager-wait-online.service
 systemctl mask systemd-remount-fs.service
 systemctl mask fedora-atomic-desktop-appstream-cache-refresh.service
+
+systemctl mask \
+    nfs-client.target \
+    gssproxy.service \
+    rpc-statd.service \
+    rpc-statd-notify.service
