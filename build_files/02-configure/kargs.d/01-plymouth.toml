@@ -1,0 +1,1 @@
+kargs = ["rd.plymouth=1", "plymouth.enable=1", "systemd.show_status=0"]
