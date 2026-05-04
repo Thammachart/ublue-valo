@@ -2,8 +2,8 @@
 
 set -ouex pipefail
 
-dnf remove -y 'plymouth*'
-rm -rf /usr/lib/dracut/modules.d/50plymouth
+# dnf remove -y 'plymouth*'
+# rm -rf /usr/lib/dracut/modules.d/50plymouth
 
 ### Install packages
 
