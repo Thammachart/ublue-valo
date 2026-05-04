@@ -19,6 +19,6 @@ dnf install -y \
 dnf install -y nushell --setopt=tsflags=noscripts
 
 dnf -y install \
-    hyprland hypridle
+    hyprland hypridle hyprland-guiutils
 
 dnf clean all
