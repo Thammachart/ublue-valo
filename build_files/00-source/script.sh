@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-sed -i 's|^\(metalink=.*\)|\1\&country=au,us,jp\&protocol=https,rsync|' \
+sed -i 's|^\(metalink=.*\)|\1\&country=au,us,jp\&protocol=https|' \
         /etc/yum.repos.d/*.repo
 
 cp -v /ctx/repos/* /etc/yum.repos.d/
