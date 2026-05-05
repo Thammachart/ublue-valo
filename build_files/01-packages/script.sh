@@ -16,9 +16,12 @@ dnf install -y \
     neovim helix chezmoi \
     greetd gtkgreet sway \
 
-dnf install -y nushell --setopt=tsflags=noscripts
+dnf install -y \
+    niri dms
 
-dnf -y install \
-    hyprland hypridle hyprland-guiutils
+# dnf -y install \
+#     hyprland hypridle hyprland-guiutils
+
+dnf install -y nushell --setopt=tsflags=noscripts
 
 dnf clean all

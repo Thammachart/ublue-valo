@@ -21,3 +21,6 @@ systemctl mask \
     gssproxy.service \
     rpc-statd.service \
     rpc-statd-notify.service
+
+systemctl --global add-wants niri.service dms
+# systemctl --global enable dms
