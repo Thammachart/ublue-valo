@@ -19,6 +19,15 @@ dnf install -y \
 dnf install -y \
     niri dms
 
+dnf install -y \
+    google-noto-fonts-all \
+    liberation-fonts-all \
+    nerd-fonts \
+    jetbrains-mono-fonts \
+    cascadia-code-fonts \
+    vercel-geist-fonts \
+    rsms-inter-fonts \
+
 # dnf -y install \
 #     hyprland hypridle hyprland-guiutils
 
