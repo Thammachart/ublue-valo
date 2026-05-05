@@ -7,9 +7,12 @@ sed -i 's|^\(metalink=.*\)|\1\&country=au,us,jp\&protocol=https|' \
 
 
 cp -v /ctx/repos/* /etc/yum.repos.d/
+
+# Brave official repo and workaround of /opt
 dnf -y config-manager addrepo \
     --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-
+mkdir -p "/var/opt"
+ln -s "/var/opt" "/opt"
 
 # dnf -y copr enable lionheartp/Hyprland
 dnf -y copr enable yalter/niri
