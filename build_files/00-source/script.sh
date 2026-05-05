@@ -5,7 +5,11 @@ set -ouex pipefail
 sed -i 's|^\(metalink=.*\)|\1\&country=au,us,jp\&protocol=https|' \
         /etc/yum.repos.d/*.repo
 
+
 cp -v /ctx/repos/* /etc/yum.repos.d/
+dnf -y config-manager addrepo \
+    --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+
 
 # dnf -y copr enable lionheartp/Hyprland
 dnf -y copr enable yalter/niri

@@ -15,6 +15,7 @@ set -ouex pipefail
 dnf install -y \
     neovim helix chezmoi \
     greetd gtkgreet sway \
+    firefox brave-browser
 
 dnf install -y \
     niri dms
@@ -26,7 +27,7 @@ dnf install -y \
     jetbrains-mono-fonts \
     cascadia-code-fonts \
     vercel-geist-fonts \
-    rsms-inter-fonts \
+    rsms-inter-fonts
 
 # dnf -y install \
 #     hyprland hypridle hyprland-guiutils
