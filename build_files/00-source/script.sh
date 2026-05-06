@@ -19,3 +19,4 @@ mkdir /opt
 dnf -y copr enable yalter/niri
 dnf -y copr enable avengemedia/dms
 dnf -y copr enable che/nerd-fonts
+dnf -y copr enable scottames/ghostty

@@ -15,6 +15,8 @@ set -ouex pipefail
 dnf install -y \
     neovim helix chezmoi \
     greetd gtkgreet sway \
+    adw-gtk3-theme \
+    ghostty \
     firefox brave-browser
 
 dnf install -y \
@@ -34,4 +36,4 @@ dnf install -y \
 
 dnf install -y nushell --setopt=tsflags=noscripts
 
-dnf clean all
+dnf -y clean all
