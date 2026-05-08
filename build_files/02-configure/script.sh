@@ -10,9 +10,6 @@ cp -v /ctx/greetd/config/* /etc/greetd/
 cp -v /ctx/greetd/launchers/* /usr/bin/
 cp -v /ctx/greetd/sessions/* /usr/share/wayland-sessions/
 
-dms greeter enable
-dms greeter sync
-
 systemctl enable greetd
 systemctl enable podman.socket
 
