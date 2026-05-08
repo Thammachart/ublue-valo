@@ -20,3 +20,4 @@ dnf -y copr enable yalter/niri
 dnf -y copr enable avengemedia/dms
 dnf -y copr enable che/nerd-fonts
 dnf -y copr enable scottames/ghostty
+dnf -y copr enable washkinazy/wayland-wm-extras

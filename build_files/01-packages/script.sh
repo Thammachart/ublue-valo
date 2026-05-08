@@ -14,7 +14,7 @@ set -ouex pipefail
 
 dnf install -y \
     neovim helix chezmoi \
-    greetd gtkgreet sway \
+    greetd regreet sway \
     adw-gtk3-theme \
     ghostty \
     firefox brave-browser

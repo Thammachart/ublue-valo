@@ -7,7 +7,11 @@ echo "fuse" > /usr/lib/modules-load.d/fuse.conf
 cp -v /ctx/dracut/* /usr/lib/dracut/dracut.conf.d/
 cp -v /ctx/kargs.d/* /usr/lib/bootc/kargs.d/
 cp -v /ctx/greetd/config/* /etc/greetd/
-cp -v /ctx/greetd/sessions/* /usr/bin/
+cp -v /ctx/greetd/launchers/* /usr/bin/
+cp -v /ctx/greetd/sessions/* /usr/share/wayland-sessions/
+
+dms greeter enable
+dms greeter sync
 
 systemctl enable greetd
 systemctl enable podman.socket
