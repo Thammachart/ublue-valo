@@ -1,2 +1,2 @@
-exec "regreet; swaymsg exit"
+exec "regreet -l debug; swaymsg exit"
 include /etc/sway/config.d/*
